@@ -9,7 +9,7 @@ ENV APP_ROOT=/app
 WORKDIR $APP_ROOT
 
 RUN apk upgrade --no-cache && \
-    apk add --no-cache build-base git && \
+    apk add --no-cache build-base && \
     # entrypointでパッケージをインストールする。
     # ビルド中はボリュームがマウントされていないため、毎回フルインストールになるので避ける
     echo $'#!/bin/sh \n\

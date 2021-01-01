@@ -1,0 +1,11 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "plugins": [
+    "import"
+  ],
+  "parser": "babel-eslint",
+  "extends": "airbnb-base"
+}
